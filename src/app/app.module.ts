@@ -8,17 +8,22 @@ import { WelcomeInternComponent } from './welcome-intern/welcome-intern.componen
 import { WelcomingMsgComponent } from './welcoming-msg/welcoming-msg.component';
 import { CardComponent } from './card/card.component';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     AppComponent,
     WelcomeEmployeeComponent,
     WelcomeInternComponent,
     WelcomingMsgComponent,
-    CardComponent
+    CardComponent,
+   
+    
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

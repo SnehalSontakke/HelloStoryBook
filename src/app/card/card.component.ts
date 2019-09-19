@@ -1,4 +1,5 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { text } from '@storybook/addon-knobs';
 
 @Component({
   selector: 'app-card',
@@ -28,7 +29,8 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 export class CardComponent {
   @Input('title') title;
   @Input('subtitle') subtitle;
-  @Input('content') content = '😄';
+  @Input('content') content ;
+  @Input ('text') text="hello card";
 
   @Output() btnClicked = new EventEmitter<boolean>();
 
@@ -36,5 +38,6 @@ export class CardComponent {
 
   handleBtnClick() {
     this.btnClicked.emit(true);
+    console.log("i was clicked");
   }
 }

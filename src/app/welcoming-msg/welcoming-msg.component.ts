@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-welcoming-msg',
@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./welcoming-msg.component.css']
 })
 export class WelcomingMsgComponent implements OnInit {
-
+  //@Input('wlc') wlc: any;
+  wlc:any="Welcome user";
   constructor() { }
 
   ngOnInit() {
